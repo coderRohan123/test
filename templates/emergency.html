@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
 
   </head>
+  
   <body>
     <center>
       <h1>
@@ -23,7 +24,8 @@
     <div class="boxed">
           <div id="chatbox">
             <p id="botText">
-              <span id="bot_greeting">Sup!! I am hearky</span>
+              <span id="bot_res">I have informed the authorities and that friend of yours about the situation</span>
+              <span id="bot_res">until they reach out to you just keep calm and stay low!</span>
             </p>
             <div id="userText">
               <ul id="userlist">
@@ -39,6 +41,8 @@
       <script type="text/javascript">
         let user_msg=document.getElementById('textInput');
         let btn=document.getElementById('send_btn')
+
+        let botText=document.getElementById('botText')
         
         let usermsg_span=document.getElementById('userlist');
 
@@ -47,22 +51,18 @@
         let list1=document.createElement('li');
         
 
-        let span=document.createElement('span');
+        let span1=document.createElement('span');
         
         let textInput=document.getElementById("textInput");
 
         let bot_txt=document.getElementById("bot_res");
-        
-        
+      
         function dis()
         {
             list1.textContent=user_msg.value;
             usermsg_span.appendChild(list1);
            
         }
-        
-        let h1=document.createElement('h1');
-        user_msg.appendChild(h1);
       </script>
     </div>
   </body>
